@@ -4,7 +4,9 @@
   "description": "Front-End ScrumLab",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/CodersLab-core/FER_SCRUM_LAB/issues"
   },
-  "homepage": "https://github.com/CodersLab-core/FER_SCRUM_LAB#readme",
+  "homepage": "https://adamr92.github.io/Zaplanuj_Jedzonko/",
   "devDependencies": {
     "browser-sync": "^2.26.0",
     "gulp": "^4.0.0",
@@ -23,5 +25,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
